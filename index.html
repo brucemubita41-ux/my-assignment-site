@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Mubita Inambao - Portfolio</title>
+    <!-- These lines below link your folders so the styles and JavaScript load! -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Bruce Mubita Inambao Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Skills</a></li>
+                <li><a href="#learning">Learning Plan</a></li>
+                <li><a href="#gallery">Photos</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="themeToggleBtn" style="background: #4a5568; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">Switch Theme</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO INTRODUCTORY AREA -->
+        <section id="hero" style="text-align: center; padding: 30px 10px; background: #edf2f7; border-radius: 8px;">
+            <h2>Hello, I'm Bruce Mubita Inambao</h2>
+            <p><strong>Student ID:</strong> 202510970</p>
+            <p><strong>Programme:</strong> Bachelor of Science in Computer Science</p>
+            <p>Welcome to my student portfolio website built for Web Technologies.</p>
+            <a href="#projects" style="display: inline-block; background: #3182ce; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold;">View My Projects</a>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Bruce Mubita Inambao, and I am a dedicated student pursuing a Bachelor of 
+                Science in Computer Science at Mulungushi University. I have always been fascinated by 
+                how computing systems solve real-world problems, which inspired me to focus on building 
+                modern software. Through my current studies in ICT251 Web Technologies, I am gaining 
+                hands-on expertise in structuring semantic markup, applying responsive layouts, and 
+                implementing client-side programming logic to create user-friendly web solutions.
+            </p>
+            
+            <!-- Expandable Content Feature -->
+            <div style="margin-top: 15px;">
+                <a href="#" id="expandDetailsBtn" style="color: #3182ce; font-weight: bold; text-decoration: none;">Show Assignment Overview [+]</a>
+                <div id="hiddenDetailsPanel" style="display: none; margin-top: 10px; padding: 10px; background: #edf2f7; border-left: 4px solid #3182ce;">
+                    <p>This dynamic portfolio application displays core responsive grids, validated parameters, and live user layout configurations for grading review.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- HOBBIES SECTION -->
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Playing football</li>
+                <li>Listening to music</li>
+                <li>Watching movies</li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS / SKILLS SECTION -->
+        <section id="projects">
+            <h2>My Skills & Projects</h2>
+            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <div style="background: #f7fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <h3>HTML5 Semantic Layouts</h3>
+                    <p>Structuring clean, accessible web pages using correct native layout elements.</p>
+                </div>
+                <div style="background: #f7fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <h3>CSS3 Styling & Responsiveness</h3>
+                    <p>Designing modern layouts that scale fluidly across desktop screens and phones.</p>
+                </div>
+                <div style="background: #f7fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                    <h3>JavaScript DOM Manipulation</h3>
+                    <p>Creating functional client-side algorithms, mathematical tools, and field validations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEARNING PLAN SECTION -->
+        <section id="learning">
+            <h2>My Learning Plan</h2>
+            <ol>
+                <li>Master HTML5 semantic layouts and CSS styling basics.</li>
+                <li>Learn JavaScript to build client-side form validations and dynamic logic.</li>
+                <li>Understand cloud deployment strategies using platforms like Render.</li>
+            </ol>
+
+            <h3>Learning Schedule</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="background-color: #1a365d; color: white;">
+                        <th style="padding: 12px; border: 1px solid #cbd5e0; text-align: left;">Topic</th>
+                        <th style="padding: 12px; border: 1px solid #cbd5e0; text-align: left;">Estimated Time</th>
+                        <th style="padding: 12px; border: 1px solid #cbd5e0; text-align: left;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">HTML5 & CSS3 Basics</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">2 Weeks</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">Completed</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">JavaScript DOM Manipulation</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">3 Weeks</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">In Progress</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">Git & Cloud Hosting</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">1 Week</td>
+                        <td style="padding: 12px; border: 1px solid #cbd5e0;">Planned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- PHOTOS GALLERY SECTION -->
+        <section id="gallery">
+            <h2>My Photos</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <figure style="margin: 0; background: #f7fafc; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; text-align: center; overflow: hidden;">
+                    <img src="images/photo1.jpg" alt="Computer Science student Bruce Mubita Inambao presenting a formal look on campus" style="width: 100%; height: 350px; object-fit: cover; border-radius: 4px;">
+                </figure>
+                <figure style="margin: 0; background: #f7fafc; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; text-align: center; overflow: hidden;">
+                    <img src="images/photo2.jpg" alt="Bruce Mubita Inambao in academic attire outdoors during a sunny day" style="width: 100%; height: 350px; object-fit: cover; border-radius: 4px;">
+                </figure>
+                <figure style="margin: 0; background: #f7fafc; padding: 10px; border: 1px solid #e2e8f0; border-radius: 6px; text-align: center; overflow: hidden;">
+                    <img src="images/photo3.jpg" alt="A profile shot of Bruce Mubita Inambao showcasing a student portfolio visual layout" style="width: 100%; height: 350px; object-fit: cover; border-radius: 4px;">
+                </figure>
+            </div>
+        </section>
+
+
+        <!-- MEDIA SECTION -->
+        <section id="media">
+            <h2>My Media</h2>
+            <div style="background: #f7fafc; padding: 15px; border-radius: 6px; margin-bottom: 20px;">
+                <h3>Project Demonstration Video</h3>
+                <video src="videos/sample_video.mp4" controls width="400" style="max-width:100%;">
+                    Your browser does not support the video tag.
+                </video>
+                <p><em>Summary: A short video clip showing a brief overview of my web development workflow.</em></p>
+            </div>
+
+            <div style="background: #f7fafc; padding: 15px; border-radius: 6px;">
+                <h3>Audio Introduction</h3>
+                <audio src="videos/sample_audio.mp3" controls style="max-width:100%;">
+                    Your browser does not support the audio tag.
+                </audio>
+                <p><em>Summary: An audio recording introducing myself and my goals for this academic semester.</em></p>
+            </div>
+        </section>
+
+        <!-- STUDY CALCULATOR FEATURE -->
+        <section id="calculator-tool">
+            <h2>Weekly Study Hours Calculator</h2>
+            <div style="background: #f7fafc; padding: 15px; border-radius: 6px; border: 1px solid #e2e8f0;">
+                <p>Plan your study week below:</p>
+                <label style="display:block; font-weight:bold; margin-bottom:5px;">Planned Study Hours Per Day:</label>
+                <input type="number" id="hoursPerDay" placeholder="e.g. 3" style="width:100%; padding:8px; margin-bottom: 10px; box-sizing:border-box;">
+                
+                <label style="display:block; font-weight:bold; margin-bottom:5px;">Days Studying Per Week:</label>

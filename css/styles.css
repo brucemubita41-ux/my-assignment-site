@@ -1,0 +1,83 @@
+/* ==========================================================================
+   ICT251 Web Technologies - Activity 3 Core Styling
+   Student: Bruce Mubita Inambao
+   ========================================================================== */
+
+:root {
+    --primary-color: #1a365d;   /* Deep Navy */
+    --accent-color: #3182ce;    /* Clear Blue */
+    --text-color: #2d3748;      /* Charcoal Text */
+    --bg-light: #f7fafc;        /* Soft Background */
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+}
+
+/* --- FORCE HEADER LINKS TO LAY HORIZONTALLY --- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 30px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.6rem;
+}
+
+/* This targets your list and forces items side-by-side */
+/* This targets your navigation list and centers it perfectly */
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;         /* Lays items horizontally */
+    flex-direction: row;   /* Explicitly row-based */
+    justify-content: center; /* 👈 THIS CENTERS YOUR NAVIGATION LINKS! */
+    gap: 20px;             /* Adds space between items */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: rgba(24, 21, 21, 0.2);
+}
+
+/* --- Layout Containers --- */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    padding: 25px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* --- Form Fields & Calculator Inputs --- */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
